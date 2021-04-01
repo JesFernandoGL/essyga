@@ -1,0 +1,175 @@
+.proyecto-inicio{
+    background-image: url("../img/desenfocada1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(51, 51, 51);
+}
+
+.content-proyecto{
+    display: flex;
+    padding: 40px 0;
+    background-color: #e6e6e6a4;
+}
+
+.img-proyecto{
+    width: 50%;
+    padding: 0 16px;
+
+}
+
+.img-proyecto img{
+    width: 100%;
+}
+
+.desc-proyecto{
+    width: 27%;
+    padding: 0 16px;
+
+}
+
+.desc-proyecto h2{
+    font-size: 20px;
+}
+
+.desc-proyecto h2, .desc-proyecto p{
+    margin-bottom: 16px;
+
+}
+
+.res-proyecto{
+    width: 23%;
+    padding: 0 16px;
+}
+
+.linea-proyecto{
+    width: 100%;
+    margin: auto;
+    height: 8px;
+    border-radius: 4px;
+    background-color: cornflowerblue;
+
+}
+
+.datos{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.datos .numero{
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 4px;
+    color: cornflowerblue;
+}
+
+.datos .texto{
+    font-size: 14px;
+    margin-left: 4px;
+}
+
+.proyect-galeria{
+    display: flex;
+    background-color: #e6e6e6a4;
+    padding: 0 8px;
+    padding-bottom: 40px;
+}
+
+.proyect-galeria .img-galeria{
+    width: 25%;
+    padding: 0 8px;
+}
+
+.img-galeria img{
+    width: 100%;
+}
+
+.video-proyecto{
+    background-color: #e6e6e6a4;
+    display: flex;
+    justify-content: center;
+    padding: 0 8px;
+}
+
+.content-video{
+    padding: 0 16px;
+    width: 50%;
+}
+
+.content-video .video{
+    width: 100%;
+    height: 312px;
+}
+
+
+
+
+@media screen and (max-width:1024px){
+    .content-proyecto{
+        flex-wrap: wrap;
+    }
+
+    .img-proyecto{
+        width: 50%;
+    }
+
+    .desc-proyecto{
+        width: 50%;
+    }
+
+    .res-proyecto{
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .linea-proyecto{
+        width: 250px;
+    }
+
+    .datos{
+        width: 80%;
+        margin: 8px auto;
+    }
+
+    .content-video{
+        width: 63%;
+    }
+
+
+}
+
+@media screen and (max-width:768px){
+    .img-proyecto{
+        width: 100%;
+    }
+
+    .desc-proyecto{
+        width: 100%;
+    }
+
+    .content-video{
+        width: 75%;
+    }
+
+    .content-video .video{
+        height: 270px;
+    }
+
+}
+
+@media screen and (max-width:570px){
+    .proyect-galeria{
+        flex-wrap: wrap;
+    }
+    .proyect-galeria .img-galeria{
+        width: 50%;
+    }
+
+    .content-video{
+        width: 100%;
+    }
+
+    .content-video .video{
+        height: 200px;
+    }
+}
