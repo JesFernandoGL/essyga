@@ -1,3 +1,8 @@
+:root{
+    --primario: rgb(33, 60, 134);
+
+}
+
 *{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -44,29 +49,23 @@ header{
 .menu{
     z-index: 10;
     background-color: rgba(210, 105, 30, 0);
-
-
-}
-
-nav ul{
     display: flex;
-    flex-wrap: wrap;
 
-    
-    
+
 
 }
-nav ul li{
-    list-style: none;
+
+.menu a{
     margin-top: 38px;
     padding: 24px;
-}
-
-nav ul li a{
     color: #fff;
     font-weight: bold;
     font-size: 18px;
     text-decoration: none;
+}
+
+.menu a:hover{
+    background-color: var(--primario);
 }
 
 #carrousel{
@@ -456,9 +455,8 @@ footer{
     #header-content{
         height: auto;
     }
-    nav ul li{
-        padding: 0 14px ;
-        margin-top: 62px;
+    .menu a{
+        padding: 24px 16px;
 
     }
 
@@ -559,16 +557,13 @@ footer{
         transition: all 0.4s;
     }
 
-    nav ul{
-        flex-direction: column;
-        display: block;
-        
+    .menu{
+        flex-direction: column;        
     }
 
-    nav ul li{
+    .menu a{
         margin-top: 0;
         padding: 20px;
-        display: block;
     }
     
 
