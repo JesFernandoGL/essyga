@@ -9,7 +9,7 @@
 
 *{
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
 
@@ -79,18 +79,35 @@ header{
 
 }
 
+#carrousel .main_title{
+    background-color: rgba(35, 55, 111, 0.87);
+    color: var(--blanco);
+    text-align: center;
+    font-size: 32px;
+    padding: 40px;
+}
+
+.main_title .title_name{
+    text-transform: uppercase;
+    display: block;
+}
+
 .text-carrousel{
-    background-color:  rgba(35, 55, 111, 0.603);
-    width: 40%;
+    background-color:  rgba(35, 55, 111, 0.87);
+    padding: 16px 0;
     position: absolute;
-    left: 8%;
+    left: 20%;
+    right: 20%;
     top: 45%;
     display: none;
 }
 
+
+
 .text-carrousel p{
     padding: 16px;
     font-size: 24px;
+    text-align: center;
     color: var(--blanco);
 }
 
@@ -148,13 +165,13 @@ header{
 
 .cont-servicio{
     width: 32%;
-    border-radius: 5px;
-    background-color: rgb(100, 148, 237);
+    border-radius: 8px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 220%;
     padding: 16px;
     margin: 0 8px;
+    margin-bottom: 12px;
     cursor: pointer;
     transition: all 0.4s;
     
@@ -166,42 +183,47 @@ header{
 }
 
 #serv1{
-    background-image: url("/img/essyga2.jpg");    
+    background-image: url("../img/servicios/servicio5.jpg");    
 }
 
 #serv2{
-    background-image: url("/img/essyga2.jpg");    
+    background-image: url("/img/servicios/servicio9.jpg");    
 }
 
 #serv3{
-    background-image: url("/img/essyga3.jpg");    
-}
-
-#serv4{
-    background-image: url("/img/essyga3.jpg");    
+    background-image: url("../img/servicios/servicio4.jpg");    
 }
 
 
 .cont-servicio h3{
-    background-color: rgba(0, 136, 255, 0.671);
-    color: #fff;
+    background-color: var(--azulClaro);
+    color: var(--blanco);
     padding: 8px;
-    margin-top: 16px;
     text-align: center;
 }
 
-.text-servicio{
-    color: #fff;
-    background-color: rgba(0, 136, 255, 0.671);
+.text-servicio{    
+    background-color: var(--azulClaro);
     padding: 8px;
     opacity: 0%;
     transition: all 0.4s;
+}
+
+.text-servicio p{
+    color: var(--blanco);
+    margin-bottom: 6px;
+}
+
+.text-servicio a{
+    text-transform: uppercase;
+    color: var(--blanco);
 }
 
 .mostrartexto{
     opacity: 100%;
     transition: all 0.4s;
 }
+
 
 #divulgacion{
     background: rgb(2,0,36);
@@ -302,7 +324,7 @@ header{
 }
 
 footer{
-    background-color: #327EBF;
+    background-color: var(--azulClaro);
 }
 .content-footer{
     display: flex;
@@ -465,8 +487,11 @@ footer{
     }
 
     .text-carrousel{
-        width: 50%;
+        left: 8%;
+        right: 8%;
     }
+
+
 }
 
 @media screen and (max-width:800px){
@@ -576,6 +601,8 @@ footer{
         transition: all 0.4s;
     }
 
+
+
     /* Nosotros */
 
     .title{
@@ -650,17 +677,22 @@ footer{
         height: 82vh;
     }
 
+    #carrousel .main_title{
+        font-size: 24px;
+        padding: 24px;
+    }
+
     .text-carrousel{
         width: auto;
         height: auto;
-        top: 40%;
+        top: 35%;
         left: 10%;
         right: 10%;
     }
 
     .text-carrousel p{
         text-align: center;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .btn-car-content{
