@@ -4,7 +4,7 @@ const textCarr = document.getElementsByClassName("text-carrousel");
 const textActive = document.getElementsByClassName("active");
 let indice = 1;
 
-contCarr.style.backgroundImage = `url("/img/essyga${indice}.jpg")`;
+contCarr.style.backgroundImage = `url("../img/essyga${indice}.jpg")`;
 
 let carInterval = setInterval(cambiarImg,5000);
 
