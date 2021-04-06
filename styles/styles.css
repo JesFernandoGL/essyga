@@ -16,11 +16,53 @@
 
 }
 
+/*Globales*/
+
 .content{
     margin: auto;
     width: 95%;
     max-width: 1200px;
     
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.blanco{
+    background-color: var(--blanco);
+}
+
+.blancoop{
+    background-color: #f8f8f8dc;
+}
+
+.azulOp{
+    background-color: #1b2d95c0;
+}
+
+.verde{
+    background-color: var(--verde);
+}
+
+.background1{
+    background: url('../img/imgbackground1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background2{
+    background: url('../img/imgbackground2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title{
+    padding: 24px 24px;
+    font-size: 32px;
+
 }
 
 header{
@@ -380,9 +422,6 @@ footer{
     padding-bottom: 40px;
 }
 
-.title{
-    margin: 24px 16px;
-}
 
 .img-principal{
     margin: 0 18px;
@@ -417,14 +456,34 @@ footer{
     margin-bottom: 24px;
 }
 
-
+.cont-img{
+    overflow: hidden;
+    
+}
 
 .modulo-tres img{
     width: 100%;
 }
 
+.img_link{
+    transform: scale(.95);
+    transition: all 0.3s ease;
+}
+
+.img_link:hover{
+    transform: scale(1);
+}
+
 .modulo-tres h3{
     padding: 16px 0;
+}
+
+.modulo-tres a{
+    color: var(--azulOscuro);
+}
+
+.modulo-tres a:hover{
+    color: var(--azulClaro);
 }
 
 .modulo-tres p{
@@ -605,10 +664,7 @@ footer{
 
     /* Nosotros */
 
-    .title{
-        margin: 16px;
-        font-size: 24px;
-    }
+   
 
     .img-principal{
         position: static;
@@ -667,6 +723,11 @@ footer{
 @media screen and (max-width: 570px){
     .content{
         width: 100%;
+    }
+
+    .title{
+        font-size: 24px;
+        padding: 16px;
     }
 
     #menu-btn{
