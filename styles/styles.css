@@ -560,7 +560,7 @@ footer{
     background: linear-gradient(0deg, rgba(28, 28, 107, 0.76) 0%, rgba(9, 9, 121, 0.5) 35%, #327dbf00 100%);
     width: 100%;
     height: 100%;
-    padding: 56px 0;
+    padding: 64px 0;
     
 }
 
@@ -569,7 +569,30 @@ footer{
     color: var(--blanco);
 }
 
-.contenido_contacto{
+.contenedor_datos{
+    padding: 40px 24px;
+    padding-bottom: 0;
+}
+
+.contenido_datos{
+    background-color: var(--azulClaro);
+    padding: 12px;
+    width: min(600px, 100%);
+    margin: 0 auto;
+    border-radius: 8px;
+    color: var(--blanco);
+}
+
+.contenido_datos .datos{
+    display: flex;
+    align-items: center;
+}
+
+.datos p{
+    margin-left: 16px;
+}
+
+.contenedor_formulario{
     padding: 40px 24px;
 }
 
@@ -993,6 +1016,22 @@ footer{
 
     .modulo-tres{
         width: 100%;
+    }
+
+    /* Contacto */
+
+    .contenido_datos .datos{
+        flex-direction: column;
+
+    }
+    .datos p{
+        margin: 8px auto;
+        text-align: center;
+    }
+
+    .datos span{
+        display: block;
+
     }
 
 
