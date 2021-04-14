@@ -7,8 +7,9 @@
 
 .content-proyecto{
     display: flex;
+    flex-wrap: wrap;
     padding: 40px 0;
-    background-color: #e6e6e6a4;
+    background-color: #f8f8f894;
 }
 
 .img-proyecto{
@@ -22,50 +23,52 @@
 }
 
 .desc-proyecto{
-    width: 27%;
+    width: 50%;
     padding: 0 16px;
 
 }
 
-.desc-proyecto h2{
+.desc-proyecto h1{
     font-size: 20px;
 }
 
-.desc-proyecto h2, .desc-proyecto p{
-    margin-bottom: 16px;
+.desc-proyecto h1{
+    margin-bottom: 8px;
+}
 
+.desc-proyecto p{
+    margin-bottom: 8px;
 }
 
 .res-proyecto{
-    width: 23%;
+    width: 100%;
     padding: 0 16px;
+    margin-top: 32px;
 }
 
 .linea-proyecto{
-    width: 100%;
-    margin: auto;
+    width: 50%;
+    margin: 8px auto;
     height: 8px;
     border-radius: 4px;
-    background-color: cornflowerblue;
+    background-color: var(--azulClaro);
 
 }
 
-.datos{
-    display: flex;
-    justify-content: center;
-    margin-top: 8px;
+.res-proyecto .datos{
+    text-align: center;
 }
 
-.datos .numero{
-    font-size: 24px;
+.res-proyecto .datos .numero{
+    font-size: 20px;
     font-weight: bold;
     margin-right: 4px;
-    color: cornflowerblue;
+
+    color: var(--azulClaro);
 }
 
-.datos .texto{
-    font-size: 14px;
-    margin-left: 4px;
+.res-proyecto .datos .texto{
+    font-size: 18px;
 }
 
 .proyect-galeria{
@@ -105,28 +108,24 @@
 
 
 @media screen and (max-width:1024px){
-    .content-proyecto{
-        flex-wrap: wrap;
-    }
-
     .img-proyecto{
-        width: 50%;
+        width: 100%;
     }
 
     .desc-proyecto{
-        width: 50%;
+        margin-top: 16px;
+        width: 100%;
     }
 
     .res-proyecto{
         width: 100%;
-        margin-top: 24px;
     }
 
     .linea-proyecto{
         width: 250px;
     }
 
-    .datos{
+    .res-proyecto .datos{
         width: 80%;
         margin: 8px auto;
     }
@@ -139,14 +138,6 @@
 }
 
 @media screen and (max-width:768px){
-    .img-proyecto{
-        width: 100%;
-    }
-
-    .desc-proyecto{
-        width: 100%;
-    }
-
     .content-video{
         width: 75%;
     }
@@ -158,6 +149,10 @@
 }
 
 @media screen and (max-width:570px){
+    .res-proyecto .datos{
+        width: 100%;
+    }
+
     .proyect-galeria{
         flex-wrap: wrap;
     }

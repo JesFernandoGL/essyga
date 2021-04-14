@@ -106,7 +106,7 @@ header{
     text-decoration: none;
 }
 
-.menu a:hover{
+.menu a:hover, .menu a.active{
     background-color: var(--azulClaro);
 }
 
@@ -233,7 +233,7 @@ header{
 }
 
 #serv2{
-    background-image: url("/img/servicios/servicio9.jpg");    
+    background-image: url("../img/servicios/servicio9.jpg");    
 }
 
 #serv3{
@@ -450,7 +450,7 @@ footer{
     position: absolute;
     bottom: 40%;
     left: 40px;
-    color: #fff;
+    color: var(--blanco);
 }
 
 #nosotros-segunda-sec{
@@ -479,12 +479,12 @@ footer{
 }
 
 .img_link{
-    transform: scale(.95);
+    transform: scale(1);
     transition: all 0.3s ease;
 }
 
 .img_link:hover{
-    transform: scale(1);
+    transform: scale(1.1);
 }
 
 .modulo-tres h3{
@@ -1029,7 +1029,7 @@ footer{
         text-align: center;
     }
 
-    .datos span{
+    .datos .campo_texto{
         display: block;
 
     }
