@@ -5,11 +5,18 @@
     color: rgb(51, 51, 51);
 }
 
+.contenedor-proyecto{
+    background-color: #e6e6e6a4;
+}
+
+.pad16{
+    padding-bottom: 16px;
+}
+
 .content-proyecto{
     display: flex;
     flex-wrap: wrap;
     padding: 40px 0;
-    background-color: #f8f8f894;
 }
 
 .img-proyecto{
@@ -73,7 +80,6 @@
 
 .proyect-galeria{
     display: flex;
-    background-color: #e6e6e6a4;
     padding: 0 8px;
     padding-bottom: 40px;
 }
@@ -88,7 +94,6 @@
 }
 
 .video-proyecto{
-    background-color: #e6e6e6a4;
     display: flex;
     justify-content: center;
     padding: 0 8px;
