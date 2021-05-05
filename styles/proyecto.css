@@ -1,5 +1,5 @@
 .proyecto-inicio{
-    background-image: url("../img/desenfocada1.jpg");
+/*     background-image: url("../img/desenfocada1.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     color: rgb(51, 51, 51);
@@ -69,8 +69,6 @@
 .res-proyecto .datos .numero{
     font-size: 20px;
     font-weight: bold;
-    margin-right: 4px;
-
     color: var(--azulClaro);
 }
 
@@ -80,13 +78,14 @@
 
 .proyect-galeria{
     display: flex;
+    flex-wrap: wrap;
     padding: 0 8px;
     padding-bottom: 40px;
 }
 
 .proyect-galeria .img-galeria{
     width: 25%;
-    padding: 0 8px;
+    padding: 8px;
 }
 
 .img-galeria img{
