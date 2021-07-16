@@ -6,7 +6,7 @@
 }
 
 .contenedor-proyecto{
-    background-color: #e6e6e6a4;
+    background-color: #fcfcfc;
 }
 
 .pad16{
@@ -47,10 +47,13 @@
     margin-bottom: 8px;
 }
 
+.contenedor-resultados-proyecto{
+    background-color: rgb(193, 211, 175);
+}
+
 .res-proyecto{
     width: 100%;
-    padding: 0 16px;
-    margin-top: 32px;
+    padding: 40px 0;
 }
 
 .linea-proyecto{
@@ -64,6 +67,7 @@
 
 .res-proyecto .datos{
     text-align: center;
+    line-height: 1.5;
 }
 
 .res-proyecto .datos .numero{
@@ -74,6 +78,14 @@
 
 .res-proyecto .datos .texto{
     font-size: 18px;
+}
+
+.contenedor-galeria-proyecto{
+    background-color: var(--negro);
+}
+
+.content-galeria{
+    padding: 40px;
 }
 
 .proyect-galeria{

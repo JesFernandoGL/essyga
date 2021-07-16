@@ -43,6 +43,10 @@
     background-color: var(--verde);
 }
 
+.txt-blanco{
+    color: var(--blanco);
+}
+
 .background1{
     background: url('../img/imgbackground1.jpg');
     background-position: center;
