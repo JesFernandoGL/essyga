@@ -22,5 +22,3 @@ function moverMenu(){
     }
 
 }
-
-console.log("menuwork")
