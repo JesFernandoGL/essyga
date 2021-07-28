@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="/img/essyga_azul.png" type="image/x-icon">
     <title>Desvío ferroviario laguna de Cuyutlán.</title>
 </head>
-<body>
+<body id="body-proyecto">
     <header>
         <div id="header-content" class="content">
             <div id="logo-content">
@@ -66,15 +66,32 @@
             <h2 class="text-center pad16 txt-blanco">Galería</h2>
             <div class="proyect-galeria">
                 <div class="img-galeria">
-                    <img src="../img/proyectos/proy7img1.jpg" alt="">
+                    <a data-id="0" href="../img/proyectos/proy7img1.jpg">
+                        <img src="../img/proyectos/proy7img1.jpg" alt="">
+                    </a>
                 </div>
                 <div class="img-galeria">
-                    <img src="../img/proyectos/proy7img2.jpg" alt="">
+                    <a data-id="1" href="../img/proyectos/proy7img2.jpg">
+                        <img src="../img/proyectos/proy7img2.jpg" alt="">
+                    </a>
                 </div>
                 <div class="img-galeria">
-                    <img src="../img/proyectos/proy7img3.jpg" alt="">
+                    <a data-id="2" href="../img/proyectos/proy7img3.jpg">
+                        <img src="../img/proyectos/proy7img3.jpg" alt="">
+                    </a>
                 </div>             
             </div>
+        </div>
+    </div>
+    <!-- Modal Galeria -->
+    <div class="proyecto-galeria-modal" id="modal">
+        <div class="modal-imagen">
+            <img id="imagen" src="../img/250x250.png" alt="">
+        </div>
+        <div class="modal-botones-numeros">
+            <button id="modal-boton-anterior" class="modal-boton">Anterior</button>
+            <p class="modal-numeros"><span id="modal-numero-indice"></span>/<span id="modal-numero-total"></span></p>
+            <button id="modal-boton-siguiente" class="modal-boton">Siguiente</button>
         </div>
     </div>
     <footer>
@@ -109,6 +126,7 @@
 
     </footer>
 
-    <script src="../javascript/menu.js"></script>    
+    <script src="../javascript/menu.js"></script>
+    <script src="../javascript/modal-galeria.js"></script>    
 </body>
 </html>

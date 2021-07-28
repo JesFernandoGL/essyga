@@ -2,8 +2,10 @@ const imagenes = document.querySelectorAll('.img-galeria a');
 const imgPrincipal = document.querySelector('.modal-imagen #imagen');
 const modal = document.querySelector('.proyecto-galeria-modal');
 const body = document.querySelector('#body-proyecto');
-const indiceTexto = document.querySelector('#modal-numero-indice');
-let imagenActual;
+const txtindice = document.querySelector('#modal-numero-indice');
+const txttotal = document.querySelector('#modal-numero-total');
+
+let imagenid;
 
 const btnAnterior = document.querySelector('#modal-boton-anterior');
 const btnSiguiente = document.querySelector('#modal-boton-siguiente');
@@ -11,6 +13,8 @@ const btnSiguiente = document.querySelector('#modal-boton-siguiente');
 
 const imagenesArray = [];
 
+
+//Array de la fuente de galeria de imagenes
 imagenes.forEach(img => {
     const src = img.getAttribute('href');
     imagenesArray.push(src);    
@@ -20,31 +24,55 @@ function abrirModal(e){
     e.preventDefault();
     const href = this.getAttribute('href');
     const indiceImagen = parseInt(this.dataset.id);
-    imgPrincipal.setAttribute('src', href);
-    modal.style.display = 'flex';
-    body.style.overflow = 'hidden';
-    imagenActual = indiceImagen
-    indiceTexto.textContent = indiceImagen + 1;
+    imagenid = indiceImagen;    
+    
+    body.classList.add('no-scroll');
+    modal.classList.add('activo');
+    getTotalTexto();
+    
+    cambiarImagen();
+    cambiarIndiceTexto();
 }
 
 function cerrarModal(e){
     const element = e.target.id;
-    if(element == 'modal'){
-        modal.style.display = 'none';
-        body.style.overflow = 'auto';
+    if(element === 'modal'){
+        modal.classList.remove('activo');
+        body.classList.remove('no-scroll');
     }
 }
 
+function cambiarImagen(){
+    if(imagenid > imagenesArray.length - 1){
+        imagenid = 0
+    }
+    if(imagenid < 0){
+        imagenid = imagenesArray.length - 1
+    }
+    imgPrincipal.src = imagenesArray[imagenid];    
+}
+
+function cambiarIndiceTexto(){
+    txtindice.textContent = imagenid + 1;
+}
+
+function getTotalTexto(){
+    txttotal.textContent = imagenesArray.length;
+}
+
 function imagenAnterior(){
-    imagenActual--;
-    console.log(imagenActual);
+    imagenid--;
+    cambiarImagen();
+    cambiarIndiceTexto();
 }
 
 function imagenSiguiente(){
-    imagenActual++;
-    console.log(imagenActual);
+    imagenid++;
+    cambiarImagen();
+    cambiarIndiceTexto();
 }
 
+//Eventos del modal
 
 imagenes.forEach(img => {
     img.addEventListener('click', abrirModal);    
@@ -54,5 +82,6 @@ imagenes.forEach(img => {
 btnAnterior.addEventListener('click', imagenAnterior);
 
 btnSiguiente.addEventListener('click', imagenSiguiente);
+
 
 modal.addEventListener('click', cerrarModal);

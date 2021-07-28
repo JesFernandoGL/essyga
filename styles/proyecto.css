@@ -1,3 +1,7 @@
+#body-proyecto.no-scroll{
+    overflow: hidden;
+}
+
 .proyecto-inicio{
 /*     background-image: url("../img/desenfocada1.jpg"); */
     background-size: cover;
@@ -123,13 +127,42 @@
     padding: 20px;
 }
 
-.modal-imagen img{
-    width: 100%;
+.proyecto-galeria-modal.activo{
+    display: flex;
+}
+
+.modal-imagen img{    
+    max-width: 100%;
+}
+
+.modal-botones-numeros{
+    display: flex;
+    width: 60%;
+    max-width: 500px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 560px){
+    .modal-botones-numeros{
+        width: 100%
+    }
+    
+}
+
+.modal-botones-numeros .modal-boton{
+    border: none;
+    background-color: var(--azulClaro);
+    color: var(--blanco);
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
 
 }
 
 .modal-numeros{
     color: var(--blanco);
+    font-size: 16px;
 }
 
 .video-proyecto{
